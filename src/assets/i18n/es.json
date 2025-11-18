@@ -1,0 +1,22 @@
+{
+  "MENU": {
+    "DASHBOARD": "Dashboard",
+    "ENVIOS": "Envíos",
+    "PAQUETES": "Paquetes",
+    "TRANSPORTISTAS": "Transportistas",
+    "VEHICULOS": "Vehículos",
+    "RUTAS": "Rutas",
+    "USUARIOS": "Usuarios",
+    "LOGOUT": "Cerrar Sesión"
+  },
+  "COMMON": {
+    "SAVE": "Guardar",
+    "CANCEL": "Cancelar",
+    "DELETE": "Eliminar",
+    "EDIT": "Editar",
+    "NEW": "Nuevo",
+    "SEARCH": "Buscar",
+    "ACTIONS": "Acciones"
+  }
+}
+

@@ -1,0 +1,222 @@
+/* Estilos Compartidos Futuristas */
+
+/* Headers de Páginas */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  button {
+    background: var(--primary-gradient) !important;
+    box-shadow: 0 4px 16px rgba(99, 102, 241, 0.4) !important;
+    border-radius: 12px !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+}
+
+/* Cards Futuristas */
+.futuristic-card {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 20px !important;
+  padding: 24px !important;
+  transition: all 0.3s ease;
+}
+
+.futuristic-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(99, 102, 241, 0.2);
+  border-color: var(--primary-color) !important;
+}
+
+/* Badges con soporte para ambos temas */
+.badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="dark"] .badge.active,
+[data-theme="dark"] .badge-activo { 
+  background: rgba(16, 185, 129, 0.2); 
+  color: #10b981; 
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+[data-theme="light"] .badge.active,
+[data-theme="light"] .badge-activo { 
+  background: #a7f3d0; 
+  color: #065f46; 
+}
+
+[data-theme="dark"] .badge.inactive,
+[data-theme="dark"] .badge-inactivo { 
+  background: rgba(239, 68, 68, 0.2); 
+  color: #ef4444; 
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+[data-theme="light"] .badge.inactive,
+[data-theme="light"] .badge-inactivo { 
+  background: #fee2e2; 
+  color: #991b1b; 
+}
+
+/* Estados de Vehículos */
+[data-theme="dark"] .badge-disponible { 
+  background: rgba(16, 185, 129, 0.2); 
+  color: #10b981; 
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+[data-theme="light"] .badge-disponible { 
+  background: #a7f3d0; 
+  color: #065f46; 
+}
+
+[data-theme="dark"] .badge-en_uso { 
+  background: rgba(251, 146, 60, 0.2); 
+  color: #fb923c; 
+  border: 1px solid rgba(251, 146, 60, 0.3);
+}
+[data-theme="light"] .badge-en_uso { 
+  background: #fed7aa; 
+  color: #c2410c; 
+}
+
+[data-theme="dark"] .badge-mantenimiento { 
+  background: rgba(168, 85, 247, 0.2); 
+  color: #a855f7; 
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+[data-theme="light"] .badge-mantenimiento { 
+  background: #e9d5ff; 
+  color: #6b21a8; 
+}
+
+[data-theme="dark"] .badge-inactivo { 
+  background: rgba(107, 114, 128, 0.2); 
+  color: #9ca3af; 
+  border: 1px solid rgba(107, 114, 128, 0.3);
+}
+[data-theme="light"] .badge-inactivo { 
+  background: #f3f4f6; 
+  color: #4b5563; 
+}
+
+/* Estados de Rutas */
+[data-theme="dark"] .badge-planificada { 
+  background: rgba(59, 130, 246, 0.2); 
+  color: #60a5fa; 
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+[data-theme="light"] .badge-planificada { 
+  background: #dbeafe; 
+  color: #1e40af; 
+}
+
+[data-theme="dark"] .badge-en_curso { 
+  background: rgba(251, 146, 60, 0.2); 
+  color: #fb923c; 
+  border: 1px solid rgba(251, 146, 60, 0.3);
+}
+[data-theme="light"] .badge-en_curso { 
+  background: #fed7aa; 
+  color: #c2410c; 
+}
+
+[data-theme="dark"] .badge-completada { 
+  background: rgba(16, 185, 129, 0.2); 
+  color: #10b981; 
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+[data-theme="light"] .badge-completada { 
+  background: #a7f3d0; 
+  color: #065f46; 
+}
+
+[data-theme="dark"] .badge-cancelada { 
+  background: rgba(239, 68, 68, 0.2); 
+  color: #ef4444; 
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+[data-theme="light"] .badge-cancelada { 
+  background: #fee2e2; 
+  color: #991b1b; 
+}
+
+/* Formularios Futuristas */
+.futuristic-form {
+  .form-container {
+    padding: 0;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  mat-card {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border) !important;
+    border-radius: 20px !important;
+    padding: 32px !important;
+  }
+
+  mat-card-header {
+    margin-bottom: 24px;
+  }
+
+  mat-card-title {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .form-row mat-form-field {
+    flex: 1;
+  }
+
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  button[type="submit"] {
+    background: var(--primary-gradient) !important;
+    box-shadow: 0 4px 16px rgba(99, 102, 241, 0.4) !important;
+  }
+}
+
